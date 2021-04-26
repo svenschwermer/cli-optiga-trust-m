@@ -30,6 +30,7 @@
 
 #include "optiga_lib_common.h"
 
+#include "trustm_helper.h"
 #include "trustm_engine_common.h"
 #include "trustm_engine_ipc_lock.h"
 

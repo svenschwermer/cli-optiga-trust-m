@@ -43,7 +43,7 @@
 
 #define WORKAROUND 1
 //#define TRUSTM_RAND_ENABLED 1
-//#define TRUSTM_ENGINE_DEBUG = 1
+//#define TRUSTM_ENGINE_DEBUG 1
 
 #ifdef WORKAROUND
 #define TRUSTM_WORKAROUND_TIMER_ARM        pal_os_event_arm()
@@ -155,7 +155,6 @@ typedef struct trustm_ctx_str
 extern trustm_ctx_t trustm_ctx;
 
 //function prototype
-int mssleep(long msec);
 int  trustmEngine_init(void);
 void trustmEngine_close(void);
 
@@ -174,6 +173,5 @@ EVP_PKEY *trustm_rsa_loadkey(void);
 EVP_PKEY *trustm_ec_loadkey(void);
 EVP_PKEY *trustm_ec_loadkeyE0E0(void);
 optiga_lib_status_t trustmEngine_WaitForCompletion(uint16_t wait_time);
-pthread_mutex_t lock;
 
 #endif // _TRUSTM_ENGINE_COMMON_H_

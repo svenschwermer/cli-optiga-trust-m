@@ -58,12 +58,12 @@
 #define IPC_SLEEP_STEPS 1
 #define MAX_IPC_TIME 50
 
-key_t ipc_FlagInterKey;
-int   ipc_FlagInterShmid;
-pid_t ipc_queue;
-unsigned char ipc_value;
-unsigned char ipc_temp;
-long ipc_task;
+static key_t ipc_FlagInterKey;
+static int   ipc_FlagInterShmid;
+static pid_t ipc_queue;
+static unsigned char ipc_value;
+static unsigned char ipc_temp;
+static long ipc_task;
 /*************************************************************************
 *  functions
 *************************************************************************/
